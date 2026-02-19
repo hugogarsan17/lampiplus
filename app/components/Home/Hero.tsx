@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../Navbar/Navbar";
 import "./hero.css";
 import Whatsapp from "../whatsapp/whatsapp";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -23,9 +24,9 @@ export default function Hero() {
             </p>
 
             <div className="hero-cta">
-              <button className="hero-button">
+              <Link href="/contacto"><button className="hero-button">
                 Solicitar presupuesto
-              </button>
+              </button></Link>
 
               <p className="hero-trust">
                 Sin compromiso · 100 % online · Datos reales
