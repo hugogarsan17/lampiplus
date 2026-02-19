@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"Formulario Web" <${process.env.EMAIL_USER}>`,
-      to: "TUCORREO@GMAIL.COM", // 👈 PON TU CORREO AQUÍ
+      to: "hugo.gds2004@GMAIL.COM", // 👈 PON TU CORREO AQUÍ
       subject: `Nuevo contacto - ${servicio}`,
       html: `
         <h2>Nuevo mensaje desde Lampiplus</h2>
