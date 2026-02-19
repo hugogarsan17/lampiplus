@@ -1,0 +1,60 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  position: relative;
+  z-index: 10;
+    background: linear-gradient(90deg, #0f2c5c 0%, #1f3ea8 50%, #2e63ff 100%);
+
+}
+
+/* LEFT SIDE */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #f3f6ff;
+  text-transform: uppercase;
+}
+
+
+/* NAV LINKS */
+.navbar-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-nav a:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 30px 24px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+}
